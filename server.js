@@ -10,7 +10,6 @@ const userRoutes = require("./routes/userRoutes")
 
 app.use(express.json());
 
-
 app.use("/", blogRoutes);
 app.use("/", authorRoutes);
 app.use("/", userRoutes);
@@ -26,3 +25,7 @@ mongoose
       console.log(`Example app listening at http://localhost:${port}`);
     });
   });
+
+
+// This code may be helpful only for some mongoose operation.
+// We need to follow node_startup project as boilerplate code :
